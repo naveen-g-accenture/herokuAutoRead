@@ -15,7 +15,7 @@ var port = process.env.PORT || 3001; // use heroku's dynamic port or 3001 if loc
 var cid = process.env.CLIENT_ID || "3MVG9YDQS5WtC11o0buEIANqY986MyFSUZEGpB1r4KNNRaYEBvUn7kzqwpm1Hb0CN2Tpv22RU.qKm7.uX4Reh";
 var csecr = process.env.CLIENT_SECRET || "8601353400541945386";
 var lserv = process.env.LOGIN_SERVER || "https://login.salesforce.com";
-var redir = process.env.REDIRECT_URI || "http://localhost:" + port + "/token";
+var redir = process.env.REDIRECT_URI || "https://autoread.herokuapp.com/token";
 
 /**
  * Middleware to call identity service and attach result to session
